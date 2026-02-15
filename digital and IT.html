@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital & IT Services | EliteTech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Header */
+        .page-header { 
+            text-align: center; 
+            padding: 4rem 5%; 
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
+            color: white; 
+        }
+        .page-header h1 { 
+            font-size: 2.8rem; 
+            margin-bottom: 1rem; 
+        }
+        .page-header p { 
+            font-size: 1.2rem; 
+            opacity: 0.9; 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+
+        /* Product Grid */
+        .container { 
+            padding: 4rem 5%; 
+            max-width: 1300px; 
+            margin: 0 auto; 
+        }
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; 
+        }
+
+        /* Service Product Card */
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e2e8f0;
+        }
+        .service-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+            border-color: var(--primary); 
+        }
+
+        .card-image { 
+            width: 100%; 
+            height: 200px; 
+            overflow: hidden; 
+            position: relative; 
+        }
+        .card-image img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.5s ease; 
+        }
+        .service-card:hover .card-image img { 
+            transform: scale(1.1); 
+        }
+        
+        .price-badge { 
+            position: absolute; 
+            top: 15px; 
+            right: 15px; 
+            background: var(--primary); 
+            color: white; 
+            padding: 5px 15px; 
+            border-radius: 50px; 
+            font-weight: 700; 
+            font-size: 0.9rem; 
+            z-index: 2; 
+        }
+
+        .card-body { 
+            padding: 25px; 
+            display: flex; 
+            flex-direction: column; 
+            flex-grow: 1; 
+        }
+        .card-category { 
+            font-size: 0.75rem; 
+            font-weight: 800; 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            margin-bottom: 8px; 
+        }
+        .card-body h3 { 
+            font-size: 1.4rem; 
+            margin-bottom: 12px; 
+            color: var(--dark); 
+        }
+        .card-body p { 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            margin-bottom: 20px; 
+            flex-grow: 1; 
+        }
+
+        .btn-action { 
+            background: var(--dark); 
+            color: white; 
+            text-align: center; 
+            padding: 12px; 
+            border-radius: 10px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: 0.3s; 
+        }
+        .btn-action:hover { 
+            background: var(--primary); 
+        }
+
+        /* Footer */
+        footer { 
+            background: var(--dark); 
+            color: white; 
+            padding: 60px 5% 30px; 
+            margin-top: 60px; 
+            text-align: center; 
+        }
+        .footer-bottom { 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            font-size: 0.85rem; 
+            color: #94a3b8; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="index.html">EliteTech <span style="color: white;">Solutions</span></a>
+        
+        <ul class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-links active" href="digital and IT.html">Digital & IT</a>
+            <a href="login.html">Account</a>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header class="page-header">
+        <h1>Digital & IT Ecosystem</h1>
+        <p>Operationalizing AI-native strategies and resilient infrastructure for the modern enterprise.</p>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            
+            <!-- Service 1: Agentic AI -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="price-badge">Custom ROI</span>
+                    <img src="IMG/Agentic AI Workforce.jpg" alt="AI Agents">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Artificial Intelligence</span>
+                    <h3>Agentic AI Workforce</h3>
+                    <p>Deploy autonomous AI agents that plan, reason, and complete multi-step business workflows without manual intervention.</p>
+                    <a href="contact.html" class="btn-action">Configure My Agents</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Cyber Resilience -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="price-badge">Essential</span>
+                    <img src="IMG/Proactive Cyber Resilience.jpg" alt="Cybersecurity">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Security</span>
+                    <h3>Proactive Cyber Resilience</h3>
+                    <p>Beyond standard firewalls: shift to Zero-Trust architecture with automated threat detection and rapid-recovery platforms.</p>
+                    <a href="contact.html" class="btn-action">View Security Tiers</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Hybrid Cloud -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="price-badge">Scalable</span>
+                    <img src="IMG/Sovereign Hybrid Cloud.jpg" alt="Cloud IT">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Infrastructure</span>
+                    <h3>Sovereign Hybrid Cloud</h3>
+                    <p>Balance performance and compliance by integrating public cloud scalability with localized, secure regional data hosting.</p>
+                    <a href="contact.html" class="btn-action">Cloud Roadmap</a>
+                </div>
+            </div>
+
+            <!-- Service 4: Edge Computing -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="price-badge">Real-time</span>
+                    <img src="IMG/Edge Processing Units.jpg" alt="Edge Computing">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Operations</span>
+                    <h3>Edge Processing Units</h3>
+                    <p>Reduce latency for IoT and high-speed analytics by processing data closer to the source at your physical business sites.</p>
+                    <a href="contact.html" class="btn-action">Deploy at Edge</a>
+                </div>
+            </div>
+
+            <!-- Service 5: AIOps 2.0 -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="price-badge">Managed</span>
+                    <img src="IMG/AIOps Infrastructure.jpg" alt="AIOps">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Managed Services</span>
+                    <h3>AIOps Infrastructure</h3>
+                    <p>Self-healing IT operations that use predictive analytics to identify and fix system failures before they impact users.</p>
+                    <a href="contact.html" class="btn-action">Streamline My Ops</a>
+                </div>
+            </div>
+
+            <!-- Service 6: Digital Provenance -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="price-badge">Compliance</span>
+                    <img src="IMG/Digital Provenance.jpg" alt="Blockchain">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Trust & Governance</span>
+                    <h3>Digital Provenance</h3>
+                    <p>Verify the origin and integrity of your data and software using secure blockchain ledgers for total compliance trust.</p>
+                    <a href="contact.html" class="btn-action">Secure My Data</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2026 EliteTech Solutions. Powering the Intelligent Enterprise.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

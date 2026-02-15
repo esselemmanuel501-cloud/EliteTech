@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Contact | EliteTech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container { 
+            max-width: 600px; 
+            margin: 5rem auto; 
+            background: white; 
+            padding: 3rem; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+        }
+        input, textarea { 
+            width: 100%; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 8px; 
+        }
+        button { 
+            width: 100%; 
+            background: #0ea5e9; 
+            color: white; 
+            border: none; 
+            padding: 15px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">EliteTech <span style="color: white;">Solutions</span></a>
+        
+        <ul class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a class="nav-links active" href="contact.html">Contact</a>
+            <a href="login.html">Account</a>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <div class="form-container">
+        <h2>Start Your Transformation</h2>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Business Email">
+            <textarea rows="5" placeholder="Tell us about your project"></textarea>
+            <button type="button" onclick="alert('Message Sent!')">Connect with an Expert</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

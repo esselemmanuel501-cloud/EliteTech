@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design & Branding | EliteTech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* Header */
+        .page-header { 
+            text-align: center; 
+            padding: 4rem 5%; 
+            background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%); 
+            color: white; 
+        }
+        .page-header h1 { 
+            font-size: 2.8rem; 
+            margin-bottom: 1rem; 
+        }
+        .page-header p { 
+            font-size: 1.2rem; 
+            opacity: 0.9; 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+
+        /* Product Grid */
+        .container { 
+            padding: 4rem 5%; 
+            max-width: 1300px; 
+            margin: 0 auto; 
+        }
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+
+        /* Design Product Card */
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+            display: flex; flex-direction: column;
+            border: 1px solid #f1f5f9;
+        }
+        .service-card:hover { 
+            transform: translateY(-12px); 
+            box-shadow: 0 30px 50px rgba(124, 58, 237, 0.15); 
+            border-color: var(--primary); 
+        }
+
+        .card-image { 
+            width: 100%; 
+            height: 230px; 
+            overflow: hidden; 
+            position: relative; }
+        .card-image img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.6s ease; 
+        }
+        .service-card:hover .card-image img { 
+            transform: scale(1.1) rotate(1deg); 
+        }
+        
+        .type-badge { 
+            position: absolute; 
+            top: 15px; 
+            right: 15px; 
+            background: white; 
+            color: var(--dark); 
+            padding: 6px 14px; 
+            border-radius: 50px; 
+            font-size: 0.7rem; 
+            font-weight: 700; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+
+        .card-body { 
+            
+            padding: 25px; 
+            display: flex; 
+            flex-direction: column; 
+            flex-grow: 1; 
+        }
+        .card-category { 
+            font-size: 0.75rem; 
+            font-weight: 800; 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            margin-bottom: 10px; 
+            letter-spacing: 0.5px; 
+        }
+        .card-body h3 { 
+            font-size: 1.4rem; 
+            margin-bottom: 12px; 
+            color: var(--dark); 
+            font-weight: 700; 
+        }
+        .card-body p { 
+            font-size: 0.95rem; 
+            color: var(--text-muted); 
+            margin-bottom: 20px; 
+            flex-grow: 1; 
+        }
+
+        .btn-order { 
+            background: var(--dark); 
+            color: white; 
+            text-align: center; 
+            padding: 14px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            transition: 0.3s; 
+            border: 2px solid var(--dark); 
+        }
+        .btn-order:hover { 
+            background: transparent; 
+            color: var(--dark); 
+        }
+
+        /* Footer */
+        footer { 
+            background: var(--dark); 
+            color: gold; 
+            padding: 60px 5% 30px; 
+            margin-top: 60px; 
+            text-align: center; 
+        }
+        .footer-bottom { 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            font-size: 0.85rem; 
+            color: #94a3b8; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="index.html">EliteTech <span style="color: white;">Solutions</span></a>
+        
+        <ul class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-links active" href="order design.html">Order Design</a>
+            <a href="login.html">Account</a>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header class="page-header">
+        <h1>Graphic Design & Creative</h1>
+        <p>High-impact visual systems designed to command attention in a 2026 digital marketplace.</p>
+
+    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="product-grid">
+            
+            <!-- Service 1: Dynamic Branding -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="type-badge">Most Popular</span>
+                    <img src="IMG/Dynamic Brand Identity.jpg" alt="Dynamic Brand Identity">
+                    
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Identity</span>
+                    <h3>Dynamic Brand Identity</h3>
+                    <p>Complete visual ecosystem including logos, fluid color palettes, and typography that adapts across web, print, and AR.</p>
+                    <a href="contact.html" class="btn-order">Order Brand Pack</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Motion Graphics -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="type-badge">High Engagement</span>
+                    <img src="IMG/2D3D Motion Assets.jpg" alt="Motion Graphics">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Content</span>
+                    <h3>2D/3D Motion Assets</h3>
+                    <p>Animated brand elements and social hooks designed for 2026 high-retention video platforms and immersive web backgrounds.</p>
+                    <a href="contact.html" class="btn-order">Order Motion Assets</a>
+                </div>
+            </div>
+
+            <!-- Service 3: UX/UI Assets -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="type-badge">Interface</span>
+                    <img src="IMG/Interactive UI Design.jpg" alt="UI Design">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Web UI</span>
+                    <h3>Interactive UI Design</h3>
+                    <p>Custom icon sets, component libraries, and interface layouts built in Figma for seamless developer handoff.</p>
+                    <a href="contact.html" class="btn-order">Order UI Kit</a>
+                </div>
+            </div>
+
+            <!-- Service 4: 3D Product Mockups -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="type-badge">E-Commerce</span>
+                    <img src="IMG/Hyper-Real 3D Mockups.jpg" alt="3D Mockups">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Visualization</span>
+                    <h3>Hyper-Real 3D Mockups</h3>
+                    <p>Photorealistic 3D renders of your physical products or digital software for use in high-end marketing campaigns.</p>
+                    <a href="contact.html" class="btn-order">Order 3D Render</a>
+                </div>
+            </div>
+
+            <!-- Service 5: Marketing Collateral -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="type-badge">Business</span>
+                    <img src="IMG/Elite Marketing Deck.jpg" alt="Print Design">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Print & Digital</span>
+                    <h3>Elite Marketing Deck</h3>
+                    <p>Pitch decks, whitepapers, and digital brochures designed to convert high-ticket enterprise clients and investors.</p>
+                    <a href="contact.html" class="btn-order">Order Deck</a>
+                </div>
+            </div>
+
+            <!-- Service 6: Social System -->
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="type-badge">Scale</span>
+                    <img src="IMG/Social Content System.jpg" alt="Social Media Design">
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Social Media</span>
+                    <h3>Social Content System</h3>
+                    <p>A library of 30+ reusable templates for Instagram, LinkedIn, and TikTok, maintaining perfect brand alignment.</p>
+                    <a href="contact.html" class="btn-order">Order Social Pack</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2026 EliteTech Solutions. Visualizing Your Competitive Edge.
+        </div>
+    </footer>
+
+</body>
+</html>
